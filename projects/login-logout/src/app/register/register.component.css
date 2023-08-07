@@ -1,0 +1,36 @@
+.outer {
+  /* height: 70vh; */
+  background: linear-gradient(to top, #1873da 50%, #222286 90%) no-repeat;
+}
+
+.bkg1 {
+  background-color: #222286;
+}
+
+.bkg {
+  background-color: #1873da;
+}
+
+#txtclr{
+  color: rgb(19, 199, 231);
+}
+
+#txtclr1 {
+  color: rgb(64, 249, 249);
+}
+
+#font1 {
+  color: rgb(64, 249, 249);
+  font-size: x-large;
+}
+
+#icon {
+  margin-top: 10%;
+}
+
+.img1 {
+  margin-top: 50%;
+  margin-bottom: 50%;
+  margin-left: 30%;
+  margin-right: 50%;
+}

@@ -1,0 +1,190 @@
+<header>
+  <nav class="navbar navbar-expand-md fixed-top zone blue">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./home"><img src="../assets/images/Logo4.jpg" alt="img1" height="60" width="160"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./home" id="font_2">Home</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-lg-auto me-lg-auto ">
+          <li class="nav-item col-2 col-md-auto">
+            <h1 class="font_1"><strong>LOGIN-LOGOUT WEBSITE</strong></h1>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item col-2 col-md-auto">
+            <button (click)="logout()" class="btn btn-dark btn-outline-warning btn-lg text-center">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="blue1">
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img src="../assets/images/background_image.jpg" class="bd-placeholder-img" alt="imageNotFound" width="100%" height="100%">
+        <div class="container">
+          <div class="carousel-caption text-start">
+
+            <h1 class="font_2">Welcome to LOGIN-LOGOUT Website</h1>
+            <p class="font_2">I am AMAN KUMAR. This website is created as a project to design a Login, Register and a Home page which can be Logged out from the home page.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img src="../assets/images/Wallpaper4.jpg" class="bd-placeholder-img" alt="imageNotFound" width="100%" height="100%">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Travelling Destinations</h1>
+            <p>Here you can find popular travelling destinations in India.</p>
+            <p><a class="btn btn-lg btn-primary" href="https://www.fabhotels.com/blog/tourist-destinations-in-india/" target="_blank">Learn Travelling Destinatons</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img src="../assets/images/bkg4.jpg" class="bd-placeholder-img" alt="imageNotFound" width="100%" height="100%">
+        <div class="container">
+          <div class="carousel-caption text-end text-white">
+            <h1>Popular Fantasy Books</h1>
+            <p>Here you can find top rating fantasy books</p>
+            <p><a class="btn btn-lg btn-primary" href="https://www.goodreads.com/genres/fantasy" target="_blank">Browse Books</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img src="../assets/images/bkg2.jpg" class="bd-placeholder-img" alt="Image Not Found" width="100%" height="100%">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Popular Sports</h1>
+            <p>Here you can find popular sports in India</p>
+            <p><a class="btn btn-lg btn-primary" href="https://blog.statscore.com/what-are-5-most-popular-sports-in-india/" target="_blank">Browse Sports</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing blue">
+    <h1 class="font_1 text-center">My Hobbies</h1>
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4 mt-3 font_1">
+        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg> -->
+        <img class="rounded-circle" src="../assets/images/Darjeeling.jpg" alt="Image Not Found" height="140" width="140">
+        <h2 class="text-uppercase">Travelling</h2>
+        <h3>Darjeeling is among the most beautiful placees that I have visited</h3>
+        <p>Darjeeling is a town and municipality in the northernmost region of the Indian state of West Bengal. Located in the Eastern Himalayas, it has an average elevation of 2,045 metres (6,709 ft). Darjeeling is famous mainly for its tea plantations. Another highlight is its Himalayan railway, which still has a working steam engine train making it a UNESCO World Heritage Site. Its backdrop is Mt. Kanchenjunga, among the world's highest peaks. Kangchenjunga, the world's third-highest mountain, rises to the north and is prominently visible on clear days.</p>
+        <p><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Darjeeling" target="_blank">View Details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 mt-3 font_1">
+        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+        <img class="rounded-circle" src="../assets/images/KDT-2.jpg" alt="Image Not Found" height="140" width="140">
+        <h2 class="text-uppercase">Reading Books</h2>
+        <h3>king's dark tidings is one of my favourite book in the fantasy genre.</h3>
+        <p>It's a #1 Best Seller in Amazon's Epic Fantasy by Kel Kade. It is a story of a young warrior called Rezkin, who was raised and trained in seclusion at a secret fortress on the edge of the northern wilds of the Kingdom of Ashai. He is unexpectedly thrust into the outworld when a terrible battle destroys all that he knows. With no understanding of his life's purpose and armed with masterful weapons mysteriously bestowed upon him by a dead king, Rezkin must travel across Ashai to find the one man who may hold the clues to his very existence.</p>
+        <p><a class="btn btn-secondary" href="https://www.goodreads.com/series/172856-king-s-dark-tidings">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 mt-3 font_1">
+        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+        <img class="rounded-circle" src="../assets/images/Cricket.jpg" alt="Image Not Found" height="140" width="140">
+        <h2 class="text-uppercase">Playing Cricket</h2>
+        <h3>Cricket is my favourite sport that I like to play as well as watch.</h3>
+        <p>Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. The batting side scores runs by striking the ball bowled at one of the wickets with the bat and then running between the wickets, while the bowling and fielding side tries to prevent this (by preventing the ball from leaving the field, and getting the ball to either wicket) and dismiss each batter (so they are "out"). The game is adjudicated by Umpires</p>
+        <p><a class="btn btn-secondary" href="https://en.wikipedia.org/wiki/Cricket">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <h1 class="font_1 text-center mb-5 font_1">My Favourite Books</h1>
+      <div class="col-md-7">
+        <h2 class="featurette-heading">The Wheel Of Time <span class="text-muted">(Robert Jordan, Brandon Sanderson) </span></h2>
+        <p class="lead font_1">Written by Robert Jordan and completed posthumously by Brandon Sanderson, The Wheel of Time is one of the greatest epics of fantasy and a #1 internationally bestselling series. Taking place both in our past and our future, the saga tells the story of a man destined to face the Evil One and save the world—or destroy it in the process.</p>
+        <p class="lead font_1">The Wheel of Time turns and Ages come and pass, leaving memories that become legend. Legend fades to myth, and even myth is long forgotten when the Age that gave it birth returns again. What was, what will be, and what is, may yet fall under the Shadow</p>
+        <p class="lead font_1">Moiraine Damodred arrives in Emond's Field on a quest to find the one prophesized to stand against The Dark One, a malicious entity sowing the seeds of chaos and destruction. When a vicious band of half-men, half beasts invade the village seeking their master's enemy, Moiraine persuades Rand al'Thor and his friends to leave their home and enter a larger unimaginable world filled with dangers waiting in the shadows and in the light.</p>
+      </div>
+      <div class="col-md-5">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <img src="../assets/images/TWOT-3.jpg" alt="Image Not Found" height="600" width="500">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Stormlight Archive <span class="text-muted">(Brandon Sanderson)</span></h2>
+        <p class="lead font_1">The Stormlight Archive is a series of epic fantasy novels written by American author Brandon Sanderson, planned to consist of ten novels. As of 2023, the series comprises four published novels and two novellas, set within his broader Cosmere universe. The first novel, The Way of Kings, The second novel, Words of Radiance, followed by Oathbringer and Rhythm of War</p>
+        <p class="lead font_1">Brandon Sanderson's epic fantasy cycle tells the story of Roshar, a world of stone and storms. Uncanny tempests of incredible power sweep across the rocky terrain. It has been centuries since the fall of the ten consecrated orders known as the Knights Radiant, but their Shardblades and Shardplate remain: mystical swords and suits of armor that transform ordinary men into near-invincible warriors. As brutal wars rage over the control of these magical weapons, an ancient text called The Way of Kings tells of ancient times, the Knights Radiant, and perhaps the true cause of the war. The Knights Radiant must stand again.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <img src="../assets/images/Stormlight-archive.jpg" alt="Image Not Found" height="600" width="500">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Lorien Legacies <span class="text-muted">(Pittacus Lore)</span></h2>
+        <p class="lead font_1">Also Known as "I am Number Four Series". The series follow the story of nine human-looking aliens brought to Earth when they were six years old. Their purpose is to grow into their powers and return to their planet, Lorien, and get it back from the evil Mogadorians. The teenagers have been protected by a charm, which only allows them to be killed in a set order, and by non-gifted guardians called Cêpan. Up to the beginning of the first book, six have survived and reached 15 years. As their powers, their Legacies, start to develop they can't stay hidden anymore.</p>
+        <p class="lead font_1">Nine of us came here. We look like you. We talk like you. We live among you. But we are not you. We can do things you dream of doing. We have powers you dream of having. We are stronger and faster than anything you have ever seen. We are the superheroes you worship in movies and comic books--but we are real.</p>
+        <p class="lead font_1">Our plan was to grow, and train, and become strong, and become one, and fight them. But they found us and started hunting us first. Now all of us are running. Spending our lives in shadows, in places where no one would look, blending in. We have lived among you without you knowing. But they know.</p>
+      </div>
+      <div class="col-md-5">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <img src="../assets/images/Lorian-Legacies.jpg" alt="Image Not Found" height="600" width="500">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container font_1">
+    <p class="float-end"><a href="./home">Back to top</a></p>
+    <p>&copy; 2021–2023 Aman Kumar Company, Pvt. Ltd. &middot; <a href="./pagenotfound" target="_blank">Privacy</a> &middot; <a href="./pagenotfound" target="_blank">Terms</a></p>
+  </footer>
+</main>

@@ -1,0 +1,115 @@
+<h5 id="h1" class="text-center"> </h5>
+<ng-particles
+    [id]="id"
+    [options]="particlesOptions"
+    [particlesInit]="particlesInit"
+    (particlesLoaded)="particlesLoaded($event)"></ng-particles>
+
+<div class="container mt-5">
+
+  <div class="d-flex justify-content-center">
+
+    <div class="card">
+
+      <div class="card-header bkg1">
+
+        <div class="text-center fs-1" id="txtclr"> Login To Access All The Content </div>
+
+      </div>
+
+        <form class="form-group" [formGroup]="form" (ngSubmit)="onSubmit()">
+
+          <div class="card-body outer">
+
+            <div class="row">
+
+              <div class="col-2"></div>
+
+              <div class="col-8">
+
+                <div class="row mt-3 pt-3 mb-3 pb-3">
+
+                  <div class="col-12 form-floating" id="txtclr1">
+
+                    <span class="fa fa-user p-2"></span>
+                    User Name:
+                    <input type="text" class="form-control"
+                    [ngClass]="{'is-invalid':submitted && func['usrnm'].errors}"
+                    formControlName="usrnm"/>
+
+                    <div *ngIf="submitted && func['usrnm'].errors" class="invalid-feedback">
+                      <div *ngIf="func['usrnm'].errors['required']">User Name is required</div>
+                      <div *ngIf="func['usrnm'].errors['minlength']">User Name's length should be of minmimum 6 letters</div>
+                      <div *ngIf="func['usrnm'].errors['usernotmatch']">User Name can only have alphabet letters and numbers</div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-12 mt-4 form-floating" id="txtclr1">
+
+                    <span class="fa fa-envelope p-2"></span>
+                    Email:
+                    <input type="email" class="form-control"
+                    [ngClass]="{'is-invalid':submitted && func['emailid'].errors}"
+                    formControlName="emailid"/>
+
+                    <div *ngIf="submitted && func['emailid'].errors" class="invalid-feedback">
+                      <div *ngIf="func['emailid'].errors['required']">Email ID is required</div>
+                      <div *ngIf="func['emailid'].errors['email']">Email ID is not correct</div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-11 mt-4 form-floating" id="txtclr1">
+
+                    <span class="fa fa-lock p-2"></span>
+                    Password:
+                    <input [type]="type" class="form-control"
+                    [ngClass]="{'is-invalid':submitted && func['pwd'].errors}"
+                    formControlName="pwd">
+
+                    <div *ngIf="submitted && func['pwd'].errors" class="invalid-feedback">
+                      <div *ngIf="func['pwd'].errors['required']">Password is required</div>
+                      <div *ngIf="func['pwd'].errors['minlength']">Password's length should be of minmimum 6 letters</div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-1 icon">
+                    <span (click)="hideShowPass()" class="fa {{eyeIcon}}"></span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-2"></div>
+
+            </div>
+
+          </div>
+
+          <div class="card-footer d-flex justify-content-center bkg">
+
+              <input type="submit"
+                class="btn btn-dark btn-outline-warning btn-lg"
+                value="Login" />
+
+          </div>
+
+        </form>
+
+        <div class="d-flex justify-content-center bkg">
+          <input type="submit"
+                routerLink="/register"
+                class="btn btn-dark btn-outline-warning btn-lg"
+                value="Register New User" />
+        </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+

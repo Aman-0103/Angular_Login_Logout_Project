@@ -3,5 +3,117 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "Login_Logout": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "skipTests": true
+        },
+
+        "@schematics/angular:directive": {
+          "skipTests": true
+        },
+
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        },
+
+        "@schematics/angular:service": {
+          "skipTests": true
+        }
+      },
+      "root": "projects/login-logout",
+      "sourceRoot": "projects/login-logout/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/login-logout",
+            "index": "projects/login-logout/src/index.html",
+            "main": "projects/login-logout/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/login-logout/tsconfig.app.json",
+            "assets": [
+              "projects/login-logout/src/favicon.ico",
+              "projects/login-logout/src/assets"
+            ],
+            "styles": [
+              "projects/login-logout/src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": ["node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "Login_Logout:build:production"
+            },
+            "development": {
+              "browserTarget": "Login_Logout:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "Login_Logout:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/login-logout/tsconfig.spec.json",
+            "assets": [
+              "projects/login-logout/src/favicon.ico",
+              "projects/login-logout/src/assets"
+            ],
+            "styles": [
+              "projects/login-logout/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
   }
 }
